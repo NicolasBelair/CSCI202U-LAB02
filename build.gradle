@@ -1,16 +1,11 @@
 plugins {
-	id "application"
+    id "application"
 }
 apply plugin: 'java'
-ext {
-	javaMainClass = "lab02.SimpleTest"
-}
-application {
-    mainClassName = javaMainClass
-}
 repositories {
     mavenCentral()
 }
 dependencies {
-	compile group: 'commons-validator', name: 'commons-validator', version: '1.4.1'
+	compile group: 'com.walterjwhite.java.modules.csv.modules', name: 'apache-commons-csv', version: '0.0.17'
 }
+mainClassName = "lab02.CSVDemo"
